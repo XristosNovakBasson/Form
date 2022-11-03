@@ -1,0 +1,191 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+body{
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden; 
+    font-family: 'myfont',sans-serif;
+}
+/* CENTERTING THE FORM */
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 650px;
+}
+/* UTILITY STYLES */
+.clear{
+    clear: both;
+}
+
+fieldset{
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
+    border: 3px solid black;
+    box-shadow: 0.5px 0.5px 10px rgba(0, 0, 0, 0.2);
+}
+
+ .f_name{
+     float: left;
+     width: 50%;
+     margin-bottom: 1rem;
+ }
+ .l_name{
+     float: right;
+     width: 50%;
+ }
+ .l_name label{
+     margin-left: 0.5rem;
+ }
+ .l_name input{
+     margin-right: 1.5rem;
+ }
+ .e_mail{
+    margin-bottom: 1rem;
+    width: 50%;
+ }
+div input[type=text], input[type=email]{
+     outline: 0.5px solid black;
+     border: none;
+     float: right; 
+     padding: 1px;
+     border-radius: 2px;
+ }
+
+ .info{
+     display: block;
+     margin-top: 1rem;
+     margin-bottom: 3rem;
+ }
+
+ .un_sub{
+     float: left;
+     width: 50%;
+ }
+ .sus_pend{
+    float: right;
+    width: 50%;
+ }
+ .del_info{
+     margin-top: 1rem;
+     float: left;
+     width: 50%;
+ }
+.un_sub input, .del_info input, .sus_pend input{
+    float: right;
+    margin-right: 5rem;
+}
+
+
+.btn{
+    display: block;
+    padding: 1.2rem 4rem;
+    color: white;
+    background: blue;
+    position: absolute;
+    left: 50%;
+    margin-top: 0.5rem;
+    transform: translateX(-50%);
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.btn:hover{
+    background: green;
+    cursor: pointer;
+    margin-top: 0.2rem;
+}
+
+/* STYLING ERROR WINDOW */
+.error{
+    background: #396afc;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, black, yellow);   
+    background: linear-gradient(to right, black, yellow); 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    transition: all 0.4s cubic-bezier(0.215, 0.610, 0.355, 1);
+    border-radius: 10px;
+    z-index: 2;
+    padding: 2rem;
+} 
+ 
+.error div{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    padding: 0.2rem 0.5rem;
+    background: #fff;
+    color: #000;
+    transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+    user-select: none; 
+    border-radius: 10px;
+    
+}
+.error h1 {
+    text-align: center;
+    font-size: 2rem;  
+}
+
+.error p { 
+    padding: 1rem;
+    font-size: 1rem; 
+    line-height: 2rem;
+    word-wrap: break-word; 
+}
+
+.error div:hover, .success div:hover{
+    transform: rotate(180deg);
+    cursor: pointer;
+    background: black;
+    color: white;
+}
+
+.hide{
+    transform: translate(-50%,200%);
+    opacity: 0;
+    
+}
+ .b{
+     height: 100%;
+     width: 100%;
+     position: absolute;
+     top: 0;
+     left: 0;
+     background-color: rgb(red, yellow, black);
+     filter: blur(10px);
+     z-index: 1;
+ }
+
+
+ .messageBox{
+     position: relative;
+     top: 50%;
+     left: 50%; 
+     transform: translate(-50%,-50%);
+     width: 500px;
+     padding: 2rem;
+     text-align: center;
+ }
+
+ .message{
+     background: purple;
+     padding: 1rem;
+     color: #fff;
+     border-radius: 10px;
+     margin-bottom: 1rem;
+ }
+ 
+ 
+ 
+ .msg{
+     background: green;
+     margin-bottom: 1rem;
+     padding: 1rem; 
+ }
+ 

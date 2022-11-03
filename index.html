@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    
+    <div class="container">
+        <form action="processor.php" method="post" id="form" autocomplete="off">
+          
+            <fieldset>
+                <legend>Information</legend>
+                <!-- firstname -->
+                <div class="f_name">
+                    <label>First name:</label>
+                    <input type="text" name="fname"  id="fname" />
+                </div>
+
+                <!-- lastname -->
+                <div class="l_name">
+                    <label>Last name:</label> 
+                    <input type="text" name="lname" id="lname"  />
+                </div>
+
+                <!-- email -->
+                <div class="e_mail clear">
+                    <label>Email Address:</label>
+                    <input type="email" name="email" id="email"  />
+                </div>
+
+                <label class="info">
+                    The Information you provide will be used in accordance with the terms of our <a href="#">Privacy Policy</a>
+                </label>
+            </fieldset>
+
+
+            <fieldset>
+                <legend>Global Preferences</legend>
+                <!-- unsub -->
+                <div class="un_sub">
+                    <label>Unsubscribe from All:</label>
+                    <input type="checkbox" id="unsub" name="unsub" value="yes"/>
+                </div>
+
+                <!-- suspend -->
+                <div class="sus_pend">
+                    <label>Suspend Email for 90 Days:</label>
+                    <input type="checkbox" id="suspend" name="suspend" value="yes"/>
+                </div>
+
+                 <!-- delete -->
+                 <div class="del_info clear">
+                    <label>Delete All My Information:</label>
+                    <input type="checkbox" id="delinfo"  name="del" value="yes"/>
+                </div>
+            </fieldset>
+
+            <label>
+                Receive an email outside of these subscription parameters?
+            </label>
+            <label><br>
+                <a href="#">Contact Us</a> 
+                for more information on why you received this communication
+            </label>
+            <input type="submit" value="Submit" class="btn" name="submit"/>
+        </form>
+    </div>
+
+
+    <!-- error window -->
+    <div class="error hide">
+        <div class="close">X</div>
+        <h1 class="clear">Errors</h1>
+        <p id="errormsg">Errors.</p>
+    </div>
+
+  
+
+    <!-- blurr -->
+    <div class="b hide">
+
+    </div>
+
+
+    <script src="app.js"></script>
+
+</body>
+</html>
